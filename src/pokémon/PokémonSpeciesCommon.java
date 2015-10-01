@@ -11,6 +11,7 @@ public class PokémonSpeciesCommon {
 	private boolean[] nvStatusCond = new boolean[7];
 	private short level; // will NEVER be greater than 32767
 	private int exp;
+	// FIXME: add elemental enum, then we can TODO primary/secondary elementals
 	public void setRandomIVs() {
 		if(IVsBuilt) throw new IllegalArgumentException("IVs already set");
 		for(int i : statIVs) statIVs[i]=(short)ThreadLocalRandom.current().nextInt(0,32);

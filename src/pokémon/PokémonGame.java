@@ -8,5 +8,7 @@ public class PokémonGame {
 		System.out.println("Which Pokémon do you choose?");
 		String yourChoice = input.next(); // get next string
 		System.out.println("You chose "+yourChoice+'!');
+		System.out.println("It's a Pokémon battle between "+yourChoice
+				+" and Zebstrika! Go!");
 	}
 }
