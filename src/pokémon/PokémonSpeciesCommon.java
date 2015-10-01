@@ -14,7 +14,8 @@ public class PokémonSpeciesCommon {
 	public boolean[] nvStatusCond = new boolean[7];
 	public short level; // will NEVER be greater than 32767
 	public int exp;
-	public Elemental type;
+	public Elemental primaryElemental;
+	public Elemental secondaryElemental;
 	// TODO lookup table
 	public void setRandomIVs() {
 		if(IVsBuilt) throw new IllegalArgumentException("IVs already set");
